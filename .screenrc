@@ -1,0 +1,23 @@
+# Turn off boring screen license
+startup_message off
+
+# Always use login shell
+shell -${SHELL}
+
+altscreen on
+
+vbell off
+vbell_msg " !! Interesting Happened !! "
+activity "%c activity -> %n%f %t"
+bell "%c bell -> %n%f %t^G"
+
+defutf8 on
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{= ky}%-Lw%{=r}%20>%n %t%{= ky}%+Lw %{= ky}%-=| %{= kw}%M%d %c%{-} %{=r} ${USER}@%H "
+defscrollback 10000
+
+#hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
+##hardstatus alwayslastline "[%C %H] %-Lw%{ WB}%50>%n%f* %t%{-}%+Lw%<"
+#

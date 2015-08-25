@@ -1,0 +1,8 @@
+#!/bin/bash
+# vim: set ft=sh
+
+source $HOME/.bash_colors
+
+export PS1="[${BBlue}\u@${BRed}\h - ${Yellow}\w${Color_Off}]${Green}$ ${Color_Off}"
+
+
