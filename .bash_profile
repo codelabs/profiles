@@ -28,9 +28,9 @@ else
     # KeyChain
     echo -e "\t\t${LIGHTGREEN}Status       ... ${NC}\c "
 
-	if [ -e $HOME/keychain ]; then
+	if [ -e /usr/bin/keychain ]; then
 
-	    KEYCHAIN_PATH="$HOME/keychain"
+	    KEYCHAIN_PATH="/usr/bin/keychain"
 
 	    if [ -e $HOME/.ssh/id_rsa ]; then
 
@@ -49,22 +49,6 @@ else
 	else
 	    failure "Cannot find Keychain"
 	fi
-
-    # YROOTs
-    YROOT_LIST=`yroot -list`
-
-    if [ -n "$YROOT_LIST" ]; then
-
-        echo -e "\t${LIGHTGREEN}YROOT List${NC}"
-        IFS=$'\n'
-        for line in $YROOT_LIST
-        do
-            echo -e "\t\t${BLUE}$line${NC}"
-        done
-
-        # Change back to original
-        IFS=$ORIGINAL_IFS
-    fi
 fi
 
 echo -e "\t${LIGHTGREEN}Loading .bash_prompt ... ${NC}\c "
@@ -90,4 +74,4 @@ fi
 echo -e "${DARKGRAY}************************************ ${NC}"
 
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
