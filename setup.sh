@@ -37,3 +37,5 @@ sudo python get-pip.py
 sudo pip install Django==1.8.4
 sudo pip install virtualenv
 
+sudo service httpd restart
+
