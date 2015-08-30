@@ -31,3 +31,9 @@ wget https://storage.googleapis.com/golang/go1.5.linux-386.tar.gz
 sudo tar -C /usr/local -xzf go1.5.linux-386.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
+# Install pip, Django
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python get-pip.py
+sudo pip install Django==1.8.4
+sudo pip install virtualenv
+
