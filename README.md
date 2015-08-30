@@ -1,6 +1,6 @@
 # Start Here
 
-Before going to *Install* section, run following commands
+Before going to *Setup* section, run following commands
 
 ```
 # Update existing yum packages
@@ -18,15 +18,16 @@ cat $HOME/.ssh/id_rsa.pub
 # After updating github account, clone the repo
 git clone git@github.com:codelabs/profiles.git
 
-cd profiles
-
 ```
 
 # Setup
 
+Run *setup.sh* to install profile files, ruby, python, golang
+
+```
+cd profiles
+
 sh setup.sh
 
-## Warning
-
-Overwrites all profile files. Backup your profiles before running this
+```
 
